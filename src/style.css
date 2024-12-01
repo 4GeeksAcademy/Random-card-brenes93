@@ -1,1 +1,92 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  margin: 0;
+  background-color: green;
+  font-family: Arial, sans-serif;
+}
+
+.contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 150px;
+  height: 200px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+#top-card {
+  font-size: 40px;
+  padding-left: 10px;
+}
+
+#bottom-card {
+  font-size: 40px;
+  display: flex;
+  justify-content: end;
+  padding-right: 10px;
+}
+
+#mid-card {
+  font-size: 50px;
+  text-align: center;
+}
+
+.corazon,
+.diamante {
+  color: red;
+}
+
+.pica,
+.trebol {
+  color: black;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+button:hover {
+  background-color: lightgray;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-direction: row;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.inputs label {
+  color: white;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.inputs input {
+  margin: 0 10px;
+  padding: 5px;
+  width: 80px;
+}
